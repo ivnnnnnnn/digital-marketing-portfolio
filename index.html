@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sarah Putri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <aside class="sidebar">
+            <img src="profile-photo.jpg" alt="Foto Sarah Putri" class="profile-photo"/>
+            <h1>Sarah Putri</h1>
+            <h2>Marketing Enthusiast</h2>
+            <section class="contact">
+                <h3>Informasi Kontak</h3>
+                <ul>
+                    <li><strong>Email:</strong> sarah.putri@email.com</li>
+                    <li><strong>Telepon:</strong> 0812-3456-7890</li>
+                    <li><strong>LinkedIn:</strong> linkedin.com/in/sarahputri</li>
+                    <li><strong>Lokasi:</strong> Jakarta, Indonesia</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Keahlian</h3>
+                <ul class="skills">
+                    <li>Analytical Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Digital Marketing</li>
+                    <li>Campaign Management</li>
+                    <li>Kepemimpinan</li>
+                </ul>
+            </section>
+        </aside>
+        <section class="content">
+            <section class="summary">
+                <h3>Ringkasan</h3>
+                <p>
+                    Marketing enthusiast dengan S1 Manajemen Bisnis (Universitas Indonesia), pengalaman memimpin tim, dan merancang kampanye digital berdampak tinggi. <span class="highlight-analytic">Mengombinasikan kemampuan analitis</span> dan <span class="highlight-problem">pemecahan masalah</span> untuk mencapai hasil nyata—seperti engagement media sosial naik 30% dan penjualan UMKM meningkat 40%. Saya percaya pada kreativitas strategis untuk memberikan solusi bermakna, sembari membangun kolaborasi positif yang menginspirasi tim.
+                </p>
+            </section>
+
+            <section class="experience">
+                <h3>Pengalaman Kerja</h3>
+                <div class="exp-item">
+                    <div>
+                        <span class="job-title">Marketing Intern</span> 
+                        <span class="company">@ Startup Lokal</span> 
+                        <span class="date">Juni 2023 – Agustus 2023</span>
+                    </div>
+                    <ul>
+                        <li>Meningkatkan engagement media sosial sebesar <strong>30%</strong> melalui strategi konten kreatif dan analisis performa.</li>
+                        <li>Mengidentifikasi tren & peluang pasar dengan <span class="highlight-analytic">keterampilan analitis</span> untuk optimalisasi brand awareness.</li>
+                        <li>Berkolaborasi erat dalam tim lintas fungsi untuk penyelesaian masalah pemasaran digital secara efisien.</li>
+                    </ul>
+                </div>
+                <div class="exp-item">
+                    <div>
+                        <span class="job-title">Wakil Ketua</span>
+                        <span class="company">@ Klub Marketing Universitas</span> 
+                        <span class="date">Januari 2022 – Januari 2023</span>
+                    </div>
+                    <ul>
+                        <li>Mengorganisir 5 acara kampus yang menjangkau lebih dari <strong>500+ mahasiswa</strong>.</li>
+                        <li>Menerapkan <span class="highlight-problem">strategi pemecahan masalah</span> untuk optimalisasi acara dan meningkatkan partisipasi aktif.</li>
+                        <li>Memimpin tim dan membangun budaya kerja kolaboratif serta komunikatif.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education">
+                <h3>Pendidikan</h3>
+                <div>
+                    <span class="degree">S1 Manajemen Bisnis</span>
+                    <span class="university">@ Universitas Indonesia</span>
+                </div>
+            </section>
+
+            <section class="portfolio">
+                <h3>Proyek & Portofolio</h3>
+                <div class="portfolio-item">
+                    <button class="accordion">Digital Marketing Campaign untuk UMKM Lokal</button>
+                    <div class="panel">
+                        <ul>
+                            <li>Merancang kampanye digital selama 3 bulan yang menghasilkan <strong>kenaikan penjualan online 40%</strong>.</li>
+                            <li>Menggunakan pendekatan data-driven untuk evaluasi efektivitas dan penyesuaian strategi.</li>
+                            <li>Contoh materi kampanye & insight <a href="#" onclick="showProjectDetails()">[lihat detail]</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sarah Putri | Dibuat dengan 💼 & kreativitas</p>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Detail Proyek</h3>
+            <p><strong>Kampanye Digital Marketing UMKM Lokal:</strong></p>
+            <p>
+                Mengembangkan konten kreatif, pengaturan iklan media sosial, dan optimasi landing page. Melakukan analisis performa mingguan untuk menemukan 'bottleneck', disertai presentasi solusi dan pelaporan progres kepada owner UMKM.
+            </p>
+            <img src="umkm-campaign-example.jpg" alt="Contoh Kampanye UMKM" style="width:100%;border-radius:10px;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

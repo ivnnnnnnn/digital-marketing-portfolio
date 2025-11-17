@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #f0f6ff 40%, #bae6fd 100%);
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    color: #222f3e;
+}
+
+.container {
+    display: flex;
+    max-width: 1050px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 24px rgba(41,128,185,0.08);
+    overflow: hidden;
+}
+
+.sidebar {
+    background: #007aff;
+    color: #fff;
+    padding: 32px 22px;
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.sidebar h1 {
+    margin: 0 0 5px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    color: #caf0f8;
+}
+.sidebar section {
+    margin-bottom: 28px;
+    width: 100%;
+}
+.contact ul, .skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skills li {
+    background: rgba(255,255,255,0.10);
+    margin: 6px 0;
+    padding: 7px 15px;
+    border-radius: 7px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.skills li:hover {
+    background: rgba(255,255,255,0.25);
+}
+.sidebar ul li {
+    font-size: 0.98rem;
+    margin: 7px 0;
+}
+
+.content {
+    padding: 42px 44px 35px 44px;
+    width: 100%;
+}
+.content section {
+    margin-bottom: 32px;
+}
+.summary p {
+    font-size: 1.13rem;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+}
+.highlight-analytic {
+    background: #caf0f8;
+    color: #1e5395;
+    padding: 1px 6px;
+    border-radius: 6px;
+}
+.highlight-problem {
+    background: #ffd6a5;
+    color: #d67d19;
+    padding: 1px 6px;
+    border-radius: 6px;
+}
+
+.experience .exp-item {
+    margin-bottom: 17px;
+}
+.job-title {
+    font-weight: bold;
+    color: #2563eb;
+}
+.company {
+    color: #555;
+    font-style: italic;
+}
+.date {
+    float: right;
+    color: #72bcc9;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.exp-item ul {
+    margin: 7px 0 0 18px;
+    font-size: 1rem;
+}
+.education .degree {
+    font-weight: 600;
+    color: #1e5395;
+}
+.university {
+    margin-left: 8px;
+    color: #2563eb;
+}
+
+/* Accordion Styles for Portfolio */
+.accordion {
+    background: #f1f9ff;
+    color: #205080;
+    cursor: pointer;
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background 0.3s;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.accordion:hover, .accordion.active {
+    background: #cce7ff;
+}
+.panel {
+    padding: 0 14px 6px 15px;
+    background: #ebf8fa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+    border-radius: 0 0 9px 9px;
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    color: #467;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 900px){
+    .container {
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .sidebar,.content{
+        width: 100%;
+        padding: 22px;
+    }
+}
+
+
+/* Modal (for portfolio detail) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 80px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background: rgba(0, 105, 200, 0.17);
+}
+.modal-content {
+  background-color: #f3fafc;
+  margin: auto;
+  padding: 24px;
+  border: 2px solid #bae6fd;
+  width: 98%;
+  max-width: 480px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(41,128,185,0.14);
+  animation: pop-fadein 0.3s;
+}
+@keyframes pop-fadein {
+  0% { transform: scale(.9); opacity: 0;}
+  100%{ transform: scale(1); opacity: 1;}
+}
+.close-btn {
+  position: absolute;
+  top: 13px;
+  right: 19px;
+  font-size: 2rem;
+  color: #1e5395;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: underline;
+    transition: color .2s;
+}
+a:hover {
+    color: #007aff;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #c5eaff;
+    border-radius: 6px;
+}
